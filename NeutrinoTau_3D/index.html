@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <title>Browser based 3D event display</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/display3d.css">
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/lib/three3DExtras.min.js"></script>
+    <script src="js/lib/TrackballControls.js"></script>
+
+    <script src="js/Vertex-def.js"></script>
+    <script src="js/Track3D-def.js"></script>
+    <script src="js/Event-def.js"></script>
+    <script src="js/MgrDraw3D-def.js"></script>
+    <script src="js/Display3d-def.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/Display3d-fills.js"></script>
+    <script src="js/MgrDraw3D-funcAdd.js"></script>
+
+  </head>
+
+  <body id="body-display3d" data-event-id="9190097972">
+
+    <div class="viewer" id="div-viewer">
+
+      <div id="div-col-display-3D">
+
+        <div id="div-toolbar-3D" class="toolbar">
+
+          <label for="input-event-3D">Event:</label>
+          <input id="input-event-3D" size="11">
+
+          <div class="btn-group" role="group">
+            <button type="button" id="btn-ecc-prev-event" onclick="display3d.loadPrevOrNextEvent(-1);"
+                    title="Previous event">
+              <img src="graphics/event-prev.png"
+                   class="img-responsive"/>
+            </button>
+            <button type="button" id="btn-ecc-next-event" onclick="display3d.loadPrevOrNextEvent(1);"
+                    title="Next event">
+              <img src="graphics/event-next.png"
+                   class="img-responsive"/>
+            </button>
+          </div>
+
+        </div>  <!-- "div-toolbar-3D" -->
+
+        <div class="row ecc-display">
+          <div id="div-canvas-3D" style="position: relative;">
+            <span id="span-canvas-3D-title" class="canvas-title"></span>
+            <canvas id="canvas-3D" class="canvas-bordered-white"></canvas>
+          </div> <!-- "div-canvas-3D" -->
+        </div>
+
+      </div> <!-- "div-col-display-3D" -->
+
+    </div> <!-- "div-viewer" -->
+
+    <div id="div-ScrLoadEvent">
+      <script id="script-LoadEvent" src="js/loadFirstEvent.js"> </script>
+    </div>
+
+  </body>
+
+</html>

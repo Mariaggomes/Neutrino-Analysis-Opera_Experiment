@@ -1,0 +1,39 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.viewer {
+  display: flex;
+  width: 100%;
+  margin: 0.25em;
+}
+
+.canvas-bordered-white {
+  border: 1px solid white;
+}
+
+.canvas-title {
+  position: absolute;
+  border: 1px solid black;
+  padding: 0px 10px 0px 10px;
+  font: bold 12px arial, serif;
+  background-color: white;
+}
+
+#div-canvas-3D {
+  position: absolute;
+}
+
+.row.ecc-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.ecc-display div {
+  padding: 0 1em;
+}
+
+.toolbar {
+  font-size: .9em;
+  font-weight: bold;
+}

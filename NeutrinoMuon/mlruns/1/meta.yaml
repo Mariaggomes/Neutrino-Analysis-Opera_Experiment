@@ -1,0 +1,5 @@
+---
+experiment_id: 1
+name: "Experiment Opera"
+artifact_location: "file:////home/acer/OPERA Experiment/NeutrinoMuon/mlruns/1"
+lifecycle_stage: active
